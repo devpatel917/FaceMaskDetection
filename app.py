@@ -21,7 +21,7 @@ def load_image():
 # # predict button -> output will be the uploaded image
 # def predict():
 def predict():
-    model = load_model('models/model-001.model')
+    model = load_model('model1.h5', compile=False)
     face_clsfr=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     labels_dict={0:'MASK',1:'NO MASK'}
     color_dict={0:(0,255,0),1:(0,0,255)}
